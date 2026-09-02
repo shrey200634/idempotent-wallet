@@ -1,4 +1,4 @@
-package com.shrey.wallet.service;
+package com.Shrey.idempotent_wallet.service;
 
 import com.Shrey.idempotent_wallet.dto.TransactionRequest;
 import com.Shrey.idempotent_wallet.dto.TransactionResponse;

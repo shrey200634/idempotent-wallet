@@ -2,6 +2,7 @@ package com.Shrey.idempotent_wallet.controller;
 
 import com.Shrey.idempotent_wallet.dto.TransactionRequest;
 import com.Shrey.idempotent_wallet.dto.TransactionResponse;
+import com.Shrey.idempotent_wallet.service.TransactionService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class TransactionController {
 
-    private final com.shrey.wallet.service.TransactionService service;
+    private final TransactionService service;
 
 
     @PostMapping("/process")
